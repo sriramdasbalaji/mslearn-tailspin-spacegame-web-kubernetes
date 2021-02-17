@@ -63,8 +63,8 @@ stages:
             inputs:
               action: createSecret
               secretName: $(imagePullSecret)
-              dockerRegistryEndpoint: 'Container Registry Connection'
-              kubernetesServiceConnection: 'Kubernetes Cluster Connection'
+              dockerRegistryEndpoint: 'myACRMS'
+              kubernetesServiceConnection: 'spike-tailspinspacegame-21678-default-1613556635069'
               namespace: 'default'
               
           - task: KubernetesManifest@0
